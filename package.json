@@ -1,0 +1,36 @@
+{
+  "name": "jeremyyiu.github.io",
+  "version": "1.0.0",
+  "description": "Jeremy's Portfolio website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeremyyiu/jeremyyiu.github.io.git"
+  },
+  "keywords": [],
+  "author": "Jeremy Yiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jeremyyiu/jeremyyiu.github.io/issues"
+  },
+  "homepage": "https://github.com/Jeremyyiu/jeremyyiu.github.io#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.3",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.2.6",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-next": "^12.1.0",
+    "prettier": "^2.5.1"
+  }
+}
