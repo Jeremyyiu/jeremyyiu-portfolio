@@ -20,5 +20,7 @@ $PROJECT_ROOT
 │   # Static files for images and 3d model file
 └── public
 
+```
+
 ### Learning from
 [https://www.craftz.dog/](https://www.craftz.dog/)
