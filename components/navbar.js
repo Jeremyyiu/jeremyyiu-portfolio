@@ -17,6 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { AiOutlineGithub } from 'react-icons/ai';
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -72,9 +73,6 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/Jeremyyiu"
@@ -84,12 +82,14 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <Image src={githubLogo} width={20} height={20} alt="logo" />
-            View my Github
+            <AiOutlineGithub />
+            Github
           </LinkItem>
         </Stack>
+
         <Box flex={1} align="right">
           <ThemeToggleButton />
+          
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
@@ -106,7 +106,7 @@ const Navbar = props => {
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
                 <MenuItem as={Link} href="https://github.com/Jeremyyiu">
-                  View my Github
+                  Github
                 </MenuItem>
               </MenuList>
             </Menu>
