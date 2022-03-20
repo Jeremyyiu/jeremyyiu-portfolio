@@ -17,9 +17,9 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineGithub } from 'react-icons/ai'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -28,6 +28,7 @@ const LinkItem = ({ href, path, children }) => {
         p={2}
         bg={active ? 'glassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
+        {...props}
       >
         {children}
       </Link>
@@ -37,7 +38,6 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = props => {
   const { path } = props
-  const githubLogo = `/images/github_logo${useColorModeValue('', '-dark')}.png`
 
   return (
     <Box
@@ -89,7 +89,7 @@ const Navbar = props => {
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
-          
+
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
