@@ -69,10 +69,10 @@ const Home = () => {
           Work Experience
         </Heading>
         <div>
-          <h1></h1>
           <Heading
             as="h4"
             size="sm"
+            float="left"
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
@@ -80,15 +80,18 @@ const Home = () => {
             <AiOutlineAmazon />
             Amazon
           </Heading>
+          <Heading as="h4" size="xs" float="right">
+          2018 - Present
+          </Heading>
         </div>
-
+        <br></br>
         <Heading as="h4" size="xs">
           Quality Assurance Engineer
         </Heading>
-        <Heading as="h5" size="xs">
-          2018 - Present
+        <Heading as="h4" size="xs">
+          Quality Assurance Technician
         </Heading>
-        <Paragraph></Paragraph>
+        <p>Hello</p>
       </Section>
     </Container>
   )

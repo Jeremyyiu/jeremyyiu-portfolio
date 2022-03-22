@@ -87,13 +87,13 @@ const Navbar = props => {
           </LinkItem>
 
           <LinkItem
-            target="_blank"
-            href="https://www.linkedin.com/in/jeremyyiu/"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
+              target="_blank"
+              href="https://www.linkedin.com/in/jeremyyiu/"
+              path={path}
+              display="inline-flex"
+              alignItems="center"
+              style={{ gap: 4 }}
+              pl={2}
           >
             <AiOutlineLinkedin />
             LinkedIn
