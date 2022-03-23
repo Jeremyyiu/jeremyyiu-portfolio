@@ -1,5 +1,5 @@
 {
-  "name": "jeremyyiu.github.io",
+  "name": "jeremyyiu-portfolio",
   "version": "1.0.0",
   "description": "Jeremy's Portfolio website",
   "scripts": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jeremyyiu/jeremyyiu.github.io.git"
+    "url": "git+https://github.com/Jeremyyiu/jeremyyiu-portfolio.git"
   },
   "keywords": [],
   "author": "Jeremy Yiu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jeremyyiu/jeremyyiu.github.io/issues"
+    "url": "https://github.com/Jeremyyiu/jeremyyiu-portfolio/issues"
   },
-  "homepage": "https://github.com/Jeremyyiu/jeremyyiu.github.io#readme",
+  "homepage": "https://github.com/Jeremyyiu/jeremyyiu-portfolio#readme",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.3",
