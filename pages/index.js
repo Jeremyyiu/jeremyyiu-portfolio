@@ -91,7 +91,7 @@ const Home = () => {
         <Heading as="h4" size="xs">
           Quality Assurance Technician
         </Heading>
-        <p>Hello</p>
+        <p></p>
       </Section>
     </Container>
   )
