@@ -81,7 +81,7 @@ const Home = () => {
             Amazon
           </Heading>
           <Heading as="h4" size="xs" float="right">
-          2018 - Present
+            2018 - Present
           </Heading>
         </div>
         <br></br>

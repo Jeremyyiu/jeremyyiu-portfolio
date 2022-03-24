@@ -22,7 +22,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? 'glassTeal' : undefined}
@@ -87,13 +87,13 @@ const Navbar = props => {
           </LinkItem>
 
           <LinkItem
-              target="_blank"
-              href="https://www.linkedin.com/in/jeremyyiu/"
-              path={path}
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
+            target="_blank"
+            href="https://www.linkedin.com/in/jeremyyiu/"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
           >
             <AiOutlineLinkedin />
             LinkedIn
@@ -121,7 +121,10 @@ const Navbar = props => {
                 <MenuItem as={Link} href="https://github.com/Jeremyyiu">
                   Github
                 </MenuItem>
-                <MenuItem as={Link} href="https://www.linkedin.com/in/jeremyyiu/">
+                <MenuItem
+                  as={Link}
+                  href="https://www.linkedin.com/in/jeremyyiu/"
+                >
                   LinkedIn
                 </MenuItem>
               </MenuList>
