@@ -1,6 +1,5 @@
 import Logo from './logo'
 import NextLink from 'next/link'
-import Image from 'next/image'
 import {
   Container,
   Box,
@@ -19,7 +18,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
 
-const LinkItem = ({ href, path, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -120,6 +119,9 @@ const Navbar = props => {
                 </NextLink>
                 <MenuItem as={Link} href="https://github.com/Jeremyyiu">
                   Github
+                </MenuItem>
+                <MenuItem as={Link} href="https://www.linkedin.com/in/jeremyyiu/">
+                  LinkedIn
                 </MenuItem>
               </MenuList>
             </Menu>
