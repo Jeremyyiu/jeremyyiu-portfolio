@@ -25,8 +25,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        bg={active ? useColorModeValue('purple.500','teal.500') : undefined}
-        color={active ? useColorModeValue('gray.50','gray.50') : inactiveColor}
+        bg={active ? useColorModeValue('purple.500', 'teal.500') : undefined}
+        color={active ? useColorModeValue('gray.50', 'gray.50') : inactiveColor}
         target={target}
         {...props}
       >
@@ -42,7 +42,7 @@ const Navbar = props => {
   return (
     <Box
       position="fixed"
-      as="nav"  
+      as="nav"
       w="100%"
       bg={useColorModeValue('#ffffff40', '')}
       style={{ backdropFilter: 'blur(10px)' }}
@@ -104,7 +104,7 @@ const Navbar = props => {
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
+            <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
