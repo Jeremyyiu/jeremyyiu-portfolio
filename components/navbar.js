@@ -25,8 +25,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        bg={active ? 'glassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        bg={active ? useColorModeValue('purple.500','teal.500') : undefined}
+        color={active ? useColorModeValue('gray.50','gray.50') : inactiveColor}
         target={target}
         {...props}
       >
@@ -42,9 +42,9 @@ const Navbar = props => {
   return (
     <Box
       position="fixed"
-      as="nav"
+      as="nav"  
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#2020380')}
+      bg={useColorModeValue('#ffffff40', '')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -74,7 +74,7 @@ const Navbar = props => {
             Works
           </LinkItem>
           <LinkItem
-            target="_blank"
+            target="_self"
             href="https://github.com/Jeremyyiu"
             path={path}
             display="inline-flex"
@@ -87,7 +87,7 @@ const Navbar = props => {
           </LinkItem>
 
           <LinkItem
-            target="_blank"
+            target="_self"
             href="https://www.linkedin.com/in/jeremyyiu/"
             path={path}
             display="inline-flex"

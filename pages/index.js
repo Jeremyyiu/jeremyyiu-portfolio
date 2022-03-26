@@ -71,7 +71,7 @@ const Home = () => {
         </SkillsSection>
         <SkillsSection>
           <SkillsType>Tools</SkillsType>
-          JIRA, Confluence, GIT, AWS
+          JIRA, Confluence, GIT, AWS, Postman
         </SkillsSection>
       </Section>
 
@@ -107,26 +107,26 @@ const Home = () => {
         </Heading>
         <WorkExpList>
           <WorkExpListItem>
-            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('orange.500', 'teal.400')}></ListIcon>
             Sole front-end engineer and developed the web UI for two major
             services used across the Alexa International Quality (AIQ)
             organisation.{' '}
           </WorkExpListItem>
           <WorkExpListItem>
-            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('orange.500', 'teal.400')}></ListIcon>
             Developed Python scripts to automate and reduce manual effort for
             tasks such as obtaining multiple status reports, updating test data
             etc.
           </WorkExpListItem>
           <WorkExpListItem>
-            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('orange.500', 'teal.400')}></ListIcon>
             Acted as a domain SME, collaborating with other teams, creating test
-            strategies and E2E automation tests for localisation E2E testing to
-            ensure quality of echo devices and Alexa features launching in the
+            strategies and E2E automation tests for localisation testing to
+            ensure quality of Echo devices and Alexa features launching in the
             ANZ market.
           </WorkExpListItem>
           <WorkExpListItem>
-            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('orange.500', 'teal.400')}></ListIcon>
             Worked on initiatives to automate routine tasks and reduce manual
             effort.{' '}
           </WorkExpListItem>

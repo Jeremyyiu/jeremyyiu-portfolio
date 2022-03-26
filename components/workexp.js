@@ -12,8 +12,10 @@ export const WorkExpYear = styled.span`
 `
 
 export const WorkExpList = styled(List)`
+  margin-top: 0.5em;
 `
 
 export const WorkExpListItem = styled(ListItem)`
   text-align: justify;
+  margin-top: 0.5em;
 `
