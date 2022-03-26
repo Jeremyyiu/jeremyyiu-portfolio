@@ -110,7 +110,7 @@ const Home = () => {
             <WorkExpListItem>
               <ListIcon
                 as={ChevronRightIcon}
-                color={useColorModeValue('orange.500', 'teal.400')}
+                color={useColorModeValue('orange.400', 'teal.400')}
               ></ListIcon>
               Sole front-end engineer and developed the web UI for two major
               services used across the Alexa International Quality (AIQ)
@@ -119,7 +119,7 @@ const Home = () => {
             <WorkExpListItem>
               <ListIcon
                 as={ChevronRightIcon}
-                color={useColorModeValue('orange.500', 'teal.400')}
+                color={useColorModeValue('orange.400', 'teal.400')}
               ></ListIcon>
               Developed Python scripts to automate and reduce manual effort for
               tasks such as obtaining multiple status reports, updating test
@@ -128,7 +128,7 @@ const Home = () => {
             <WorkExpListItem>
               <ListIcon
                 as={ChevronRightIcon}
-                color={useColorModeValue('orange.500', 'teal.400')}
+                color={useColorModeValue('orange.400', 'teal.400')}
               ></ListIcon>
               Acted as a domain SME, collaborating with other teams, creating
               test strategies and E2E automation tests for localisation testing
@@ -138,7 +138,7 @@ const Home = () => {
             <WorkExpListItem>
               <ListIcon
                 as={ChevronRightIcon}
-                color={useColorModeValue('orange.500', 'teal.400')}
+                color={useColorModeValue('orange.400', 'teal.400')}
               ></ListIcon>
               Worked on initiatives to automate routine tasks and reduce manual
               effort.{' '}

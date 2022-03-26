@@ -61,7 +61,7 @@ const Work = () => (
         <WorkExpListItem>
           <ListIcon
             as={ChevronRightIcon}
-            color={useColorModeValue('orange.500', 'teal.400')}
+            color={useColorModeValue('orange.400', 'teal.400')}
           ></ListIcon>
           Users can check their network status - wifi, mobile data, bluetooth,
           gps, hotspot, airplane mode and their data usage. Users can also
@@ -70,7 +70,7 @@ const Work = () => (
         <WorkExpListItem>
           <ListIcon
             as={ChevronRightIcon}
-            color={useColorModeValue('orange.500', 'teal.400')}
+            color={useColorModeValue('orange.400', 'teal.400')}
           ></ListIcon>
           Users can also toggle their brightness manually, switch on/off
           autobrightness and also switch on/off monochrome mode (This requires
@@ -79,7 +79,7 @@ const Work = () => (
         <WorkExpListItem>
           <ListIcon
             as={ChevronRightIcon}
-            color={useColorModeValue('orange.500', 'teal.400')}
+            color={useColorModeValue('orange.400', 'teal.400')}
           ></ListIcon>
           Users can view their battery statistics - battery life percentage,
           temperature, voltage, health and technology.{' '}
@@ -87,7 +87,7 @@ const Work = () => (
         <WorkExpListItem>
           <ListIcon
             as={ChevronRightIcon}
-            color={useColorModeValue('orange.500', 'teal.400')}
+            color={useColorModeValue('orange.400', 'teal.400')}
           ></ListIcon>
           Users can create geofences and be notified when they enter/leave a
           geofence. Users can choose whether or not to toggle WiFi/bluetooth
