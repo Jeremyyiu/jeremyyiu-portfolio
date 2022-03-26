@@ -1,9 +1,20 @@
-import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  UnorderedList,
+  ListItem,
+  ListIcon,
+  Grid,
+  GridItem,
+  useColorModeValue
+} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/workexp'
 import { SkillsType, SkillsSection } from '../components/skills'
+import { WorkExpList, WorkExpListItem } from '../components/workexp'
 import { AiOutlineAmazon } from 'react-icons/ai'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const Home = () => {
   return (
@@ -68,30 +79,58 @@ const Home = () => {
         <Heading as="h3" variant="section-title">
           Work Experience
         </Heading>
-        <div>
-          <Heading
-            as="h4"
-            size="sm"
-            float="left"
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-          >
-            <AiOutlineAmazon />
-            Amazon
-          </Heading>
-          <Heading as="h4" size="xs" float="right">
-            2018 - Present
-          </Heading>
-        </div>
-        <br></br>
+        <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+          <GridItem colSpan={2}>
+            <Heading
+              as="h4"
+              size="sm"
+              float="left"
+              display="inline-flex"
+              alignItems="center"
+              style={{ gap: 4 }}
+            >
+              <AiOutlineAmazon />
+              Amazon
+            </Heading>
+          </GridItem>
+          <GridItem colStart={4} colEnd={6}>
+            <Heading as="h4" size="xs" float="right">
+              2018 - Present
+            </Heading>
+          </GridItem>
+        </Grid>
         <Heading as="h4" size="xs">
-          Quality Assurance Engineer
+          Quality Assurance Engineer (2020 - Present)
         </Heading>
         <Heading as="h4" size="xs">
-          Quality Assurance Technician
+          Quality Assurance Technician (2018 - 2020)
         </Heading>
-        <p></p>
+        <WorkExpList>
+          <WorkExpListItem>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            Sole front-end engineer and developed the web UI for two major
+            services used across the Alexa International Quality (AIQ)
+            organisation.{' '}
+          </WorkExpListItem>
+          <WorkExpListItem>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            Developed Python scripts to automate and reduce manual effort for
+            tasks such as obtaining multiple status reports, updating test data
+            etc.
+          </WorkExpListItem>
+          <WorkExpListItem>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            Acted as a domain SME, collaborating with other teams, creating test
+            strategies and E2E automation tests for localisation E2E testing to
+            ensure quality of echo devices and Alexa features launching in the
+            ANZ market.
+          </WorkExpListItem>
+          <WorkExpListItem>
+            <ListIcon as={ChevronRightIcon} color={useColorModeValue('cyan.400', 'teal.400')}></ListIcon>
+            Worked on initiatives to automate routine tasks and reduce manual
+            effort.{' '}
+          </WorkExpListItem>
+        </WorkExpList>
       </Section>
     </Container>
   )
