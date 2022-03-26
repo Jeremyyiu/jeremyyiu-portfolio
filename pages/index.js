@@ -36,8 +36,8 @@ const Home = () => {
           Jeremy has 3+ years experience in React, JS, Python and AWS serverless
           technologies, creating new tools that would benefit his team and his
           organisation as a whole. He is interested in being more involved in
-          development work, particualrly the front-end as he enjoys developing
-          visually apepaling applications that is easy for customers to use. He
+          development work, particularly the front-end as he enjoys developing
+          visually appealing applications that is easy for customers to use. He
           is happy to learn any new technologies and tools if the need arises.
         </Paragraph>
       </Section>
