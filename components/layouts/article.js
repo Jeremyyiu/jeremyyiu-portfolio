@@ -17,6 +17,7 @@ const Layout = ({ children, title }) => (
     transition={{ duration: 0.4, type: 'easeInOut' }}
     style={{ position: 'relative' }}
   >
+    <br></br>
     <>
       {title && (
         <Head>

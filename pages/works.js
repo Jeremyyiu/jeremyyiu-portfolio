@@ -6,7 +6,6 @@ import testpng from '../public/images/works/test.png'
 
 const Works = () => (
   <Layout title="Works">
-    <br></br>
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Works
