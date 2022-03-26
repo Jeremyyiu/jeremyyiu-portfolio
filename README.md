@@ -1,5 +1,8 @@
 # Jeremy's Personal Website
 
+## Hosted on Vercel
+https://jeremyyiu-portfolio.vercel.app/
+
 ## Stack used
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
