@@ -1,4 +1,4 @@
-import { Box, ListItem, List } from '@chakra-ui/react'
+import { Box, ListItem, List, SimpleGrid } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 export const WorkExpSection = styled(Box)`
@@ -17,5 +17,9 @@ export const WorkExpList = styled(List)`
 
 export const WorkExpListItem = styled(ListItem)`
   text-align: justify;
+  margin-top: 0.5em;
+`
+
+export const WorkSimpleGrid = styled(SimpleGrid)`
   margin-top: 0.5em;
 `

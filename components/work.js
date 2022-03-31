@@ -22,7 +22,7 @@ export const WorkImage = ({ src, alt }) => (
 )
 
 export const PhoneWorkImage = ({ src, alt }) => (
-  <Image htmlHeight='75%' htmlWidth='75%' src={(src)} alt={alt} />
+  <Image htmlHeight="80%" htmlWidth="80%" src={src} alt={alt} />
 )
 
 export const Meta = ({ children }) => (

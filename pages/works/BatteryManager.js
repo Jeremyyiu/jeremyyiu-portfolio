@@ -10,8 +10,12 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, PhoneWorkImage, Meta } from '../../components/work'
-import { WorkExpList, WorkExpListItem } from '../../components/workexp'
+import { Title, PhoneWorkImage, Meta } from '../../components/work'
+import {
+  WorkExpList,
+  WorkExpListItem,
+  WorkSimpleGrid
+} from '../../components/workexp'
 import P from '../../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
@@ -100,30 +104,66 @@ const Work = () => (
         <ListItem>
           <Meta>Battery Fragment</Meta>
         </ListItem>
-      <SimpleGrid columns={2} gap={2}>
-        <PhoneWorkImage src="/images/works/capstoneBatteryFragPhoto1.png" alt="BatteryMetrics" />
-        <PhoneWorkImage src="/images/works/capstoneBatteryFragPhoto2.png" alt="BatteryMetricsAndModes" />
-        <PhoneWorkImage src="/images/works/capstoneBatteryFragPhoto3.png" alt="WifiToggleOptions" />
-        <PhoneWorkImage src="/images/works/capstoneBatteryFragPhoto4.png" alt="WifiToggleOptions" />
-      </SimpleGrid>
-      <ListItem>
+        <WorkSimpleGrid columns={2} gap={2}>
+          <PhoneWorkImage
+            src="/images/works/capstoneBatteryFragPhoto1.png"
+            alt="BatteryMetrics"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneBatteryFragPhoto2.png"
+            alt="BatteryMetricsAndModes"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneBatteryFragPhoto3.png"
+            alt="WifiToggleOptions"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneBatteryFragPhoto4.png"
+            alt="WifiToggleOptions"
+          />
+        </WorkSimpleGrid>
+        <ListItem>
           <Meta>Controller Fragment</Meta>
         </ListItem>
-      <SimpleGrid columns={2} gap={2}>
-        <PhoneWorkImage src="/images/works/capstoneControllerFragPhoto1.png" alt="NetworkToggleSettings" />
-        <PhoneWorkImage src="/images/works/capstoneControllerFragPhoto2.png" alt="DisplayToggleSettings" />
-      </SimpleGrid>
-      <ListItem>
+        <WorkSimpleGrid columns={2} gap={2}>
+          <PhoneWorkImage
+            src="/images/works/capstoneControllerFragPhoto1.png"
+            alt="NetworkToggleSettings"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneControllerFragPhoto2.png"
+            alt="DisplayToggleSettings"
+          />
+        </WorkSimpleGrid>
+        <ListItem>
           <Meta>Geofencing Fragment</Meta>
         </ListItem>
-      <SimpleGrid columns={2} gap={2}>
-        <PhoneWorkImage src="/images/works/capstoneGeofencingFragPhoto1.png" alt="GeofencingEmptyList" />
-        <PhoneWorkImage src="/images/works/capstoneGeofencingFragPhoto2.png" alt="GeofencingNotificationSettings" />
-        <PhoneWorkImage src="/images/works/capstoneGeofencingFragPhoto3.png" alt="GeofencingToggleSettings" />
-        <PhoneWorkImage src="/images/works/capstoneGeofencingFragPhoto4.png" alt="GeofencingCreateAGeofence" />
-        <PhoneWorkImage src="/images/works/capstoneGeofencingFragPhoto5.png" alt="GeofencingNonEmptyList" />
-        <PhoneWorkImage src="/images/works/capstoneGeofencingFragPhoto6.png" alt="GeofencingNotification" />
-      </SimpleGrid>
+        <WorkSimpleGrid columns={2} gap={2}>
+          <PhoneWorkImage
+            src="/images/works/capstoneGeofencingFragPhoto1.png"
+            alt="GeofencingEmptyList"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneGeofencingFragPhoto2.png"
+            alt="GeofencingNotificationSettings"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneGeofencingFragPhoto3.png"
+            alt="GeofencingToggleSettings"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneGeofencingFragPhoto4.png"
+            alt="GeofencingCreateAGeofence"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneGeofencingFragPhoto5.png"
+            alt="GeofencingNonEmptyList"
+          />
+          <PhoneWorkImage
+            src="/images/works/capstoneGeofencingFragPhoto6.png"
+            alt="GeofencingNotification"
+          />
+        </WorkSimpleGrid>
       </List>
     </Container>
   </Layout>
