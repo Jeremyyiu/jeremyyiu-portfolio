@@ -2,7 +2,7 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { WorkGridItem } from '../components/grid-item'
-import testpng from '../public/images/works/test.png'
+import batteryManager from '../public/images/works/batteryManagerIcon.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -17,7 +17,7 @@ const Works = () => (
           <WorkGridItem
             id="BatteryManager"
             title="Battery Manager"
-            thumbnail={testpng}
+            thumbnail={batteryManager}
           >
             My capstone project which is a battery management app developed in
             2018 aimed to help users maximise their battery life usage.

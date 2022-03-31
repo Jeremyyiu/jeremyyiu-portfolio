@@ -21,6 +21,10 @@ export const WorkImage = ({ src, alt }) => (
   <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
 )
 
+export const PhoneWorkImage = ({ src, alt }) => (
+  <Image htmlHeight='75%' htmlWidth='75%' src={(src)} alt={alt} />
+)
+
 export const Meta = ({ children }) => (
   <Badge colorScheme="green" mr={2}>
     {children}
